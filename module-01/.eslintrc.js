@@ -10,10 +10,11 @@ module.exports = {
       SharedArrayBuffer: "readonly"
     },
     parserOptions: {
-      ecmaVersion: 2020
+      ecmaVersion: 2018
     },
     rules: {
-      "no-console": "off"
+      "no-console": "off",
+      "no-alert": "off"
     }
   };
   
