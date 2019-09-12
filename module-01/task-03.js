@@ -1,3 +1,5 @@
+
+
 const CANSELED_BY_USER = 'Отменено пользователем';
 const WELCOME = 'Добро пожаловать';
 const ACCES_DENIED = 'Доступ запрещен, неверный пароль';
