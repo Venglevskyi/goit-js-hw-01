@@ -11,15 +11,13 @@ const saleStatus = `Вы купили ${userPurchase} дроидов, на сч�
 
 let message;
 
-if (userPurchase === null) {
-  message = CANSELED_BY_USER;
-  console.log(message);
-}
-
-if (accountBalance > 0) {
+if (accountBalance > 0 && userPurchase !== null) {
   message = saleStatus;
   console.log(message);
-} else {
+} else if (accountBalance < 0) {
   message = OVER_LIMIT;
+  console.log(message);
+} else {
+  message = CANSELED_BY_USER;
   console.log(message);
 }
